@@ -6,3 +6,6 @@ apt-cache show packagename
 
 # Search for packages matching a name
 apt-cache search packagename
+
+# Resetting specific files to a specific commit version
+git checkout c5f567 -- file1/to/restore file2/to/restore
