@@ -28,3 +28,13 @@ Building a Docker image in Ubuntu:
 https://blog.mobatek.net/post/mobaxterm-new-release-9.0/
 
 Once this is setup, we dont need git-bash or Cygwin or other tools for development.
+
+# Tools in Ubuntu on Windows
+* tig dos2unix apt-file
+
+# Tools on Windows
+* MobaXTerm
+* Firefox
+* Google Chrome
+* Ubuntu
+* WhatsApp
