@@ -2,7 +2,7 @@
 https://nickjanetakis.com/blog/using-wsl-and-mobaxterm-to-create-a-linux-dev-environment-on-windows
 https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
 ##TL;DR
-* Download and install Docker for Windows
+* Download and install Docker for Windows. Make sure you run it as Administrator other wise you'll see errors like `Docker hv-sock proxy (vsudd) is not reachable`.
 * On host (Windows): Enable Docker to be accessible over tcp WITHOUT TLS (in settings)
 * In Ubuntu:
 ** Install docker-ce, *docker.io* does NOT work using the Docker For Windows as the daemon
