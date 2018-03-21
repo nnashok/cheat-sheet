@@ -4,7 +4,20 @@ https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-fla
 ##TL;DR
 * Download and install Docker for Windows
 * On host (Windows): Enable Docker to be accessible over tcp WITHOUT TLS (in settings)
-* In Ubuntu: `export DOCKER_HOST=tcp://0.0.0.0:2375`
+* In Ubuntu:
+** Install docker-ce, *docker.io* does NOT work using the Docker For Windows as the daemon
+   ```
+   sudo apt-get remove docker docker-engine docker.io
+   sudo apt-get update
+   sudo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   sudo apt-key fingerprint 0EBFCD88
+   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   sudo apt-get update
+   sudo apt-get install docker-ce
+   export DOCKER_HOST=tcp://0.0.0.0:2375
+   docker run hello-world
+   ```
 Building a Docker image in Ubuntu:
 
 # Launch graphical apps on Ubuntu
