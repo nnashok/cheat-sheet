@@ -9,3 +9,9 @@ apt-cache search packagename
 
 # Resetting specific files to a specific commit version
 git checkout c5f567 -- file1/to/restore file2/to/restore
+
+# Docker
+* Delete dangling images
+    ```
+    docker rmi $(docker images -q -f dangling=true)
+    ```
