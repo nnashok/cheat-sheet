@@ -38,4 +38,4 @@ Once this is setup, we dont need git-bash or Cygwin or other tools for developme
 * Google Chrome
 * Ubuntu
 * WhatsApp
-* NetStumbler (for WiFi signal analysis)
+* NetSpot (for WiFi signal analysis) (NetStumbler didnt support the specific Intel wifi chip)
