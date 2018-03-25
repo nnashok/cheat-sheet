@@ -38,3 +38,4 @@ Once this is setup, we dont need git-bash or Cygwin or other tools for developme
 * Google Chrome
 * Ubuntu
 * WhatsApp
+* NetStumbler (for WiFi signal analysis)
