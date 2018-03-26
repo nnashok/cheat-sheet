@@ -2,6 +2,7 @@
 https://nickjanetakis.com/blog/using-wsl-and-mobaxterm-to-create-a-linux-dev-environment-on-windows
 https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
 ##TL;DR
+* Enable WSL
 * Download and install Docker for Windows. Make sure you run it as Administrator other wise you'll see errors like `Docker hv-sock proxy (vsudd) is not reachable`.
 * On host (Windows): Enable Docker to be accessible over tcp WITHOUT TLS (in settings)
 * In Ubuntu:
@@ -39,3 +40,5 @@ Once this is setup, we dont need git-bash or Cygwin or other tools for developme
 * Ubuntu
 * WhatsApp
 * NetSpot (for WiFi signal analysis) (NetStumbler didnt support the specific Intel wifi chip)
+* ConEmu
+   Configure ConEmu to use Ubuntu bash: goto the settings -> Startup -> Specific task name screen and pick {Bash::bash} from the drop down list and save the settings.
