@@ -21,3 +21,6 @@ git checkout c5f567 -- file1/to/restore file2/to/restore
     ```
     docker rmi $(docker images -q -f dangling=true)
     ```
+
+# VIM
+* Format a json buffer: `:%!python -m json.tool`
