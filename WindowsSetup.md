@@ -46,3 +46,6 @@ Once this is setup, we dont need git-bash or Cygwin or other tools for developme
 * NetSpot (for WiFi signal analysis) (NetStumbler didnt support the specific Intel wifi chip)
 * ConEmu
    Configure ConEmu to use Ubuntu bash: goto the settings -> Startup -> Specific task name screen and pick {Bash::bash} from the drop down list and save the settings.
+   
+# Windows Tricks
+* Open a file using the default application from a Windows shell: `start readme.txt`. If you need to start from within another program, you need to invoke it via the `cmd` like `cmd /c "start readme.txt"`.
