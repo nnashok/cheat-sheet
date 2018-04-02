@@ -21,6 +21,10 @@ https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-fla
    ```
 Building a Docker image in Ubuntu:
 
+# Accessing files within Ubuntu from Windows
+```C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\```
+**NOTE: Modifying a file from Windows may cause the file properties/attributes to be corrupted.**
+
 # Launch graphical apps on Ubuntu
 * Launch MobaXTerm on Windows
 * In Ubuntu: `export DISPLAY=:0`
