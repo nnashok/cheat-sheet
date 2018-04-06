@@ -24,3 +24,7 @@ git checkout c5f567 -- file1/to/restore file2/to/restore
 
 # VIM
 * Format a json buffer: `:%!python -m json.tool`
+
+# pip
+* Show package contents: `pip show -f cookiecutter`
+* Show package details for all packages: `pip list | cut -d" " -f1 | xargs pip show -f | less`
