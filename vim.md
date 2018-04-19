@@ -11,4 +11,5 @@
 
 # Plugins
 # fuzzy finder: cmdt, ctrlp
-# surroundvim: for working with parens, quotes etc
+# surroundvim: for working with parens, quotes etc, operates on surrounding objects
+`ds'` or `dsp`, `asi'`
