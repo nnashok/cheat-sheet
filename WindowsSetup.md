@@ -49,3 +49,6 @@ Once this is setup, we dont need git-bash or Cygwin or other tools for developme
    
 # Windows Tricks
 * Open a file using the default application from a Windows shell: `start readme.txt`. If you need to start from within another program, you need to invoke it via the `cmd` like `cmd /c "start readme.txt"`.
+
+# Bluetooth
+https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings-winpc/win-10-pc-cant-complete-bluetooth-file-transfer/291119aa-5e87-4fe2-9da1-6a5b4a49eb68
