@@ -28,3 +28,22 @@ git checkout c5f567 -- file1/to/restore file2/to/restore
 # pip
 * Show package contents: `pip show -f cookiecutter`
 * Show package details for all packages: `pip list | cut -d" " -f1 | xargs pip show -f | less`
+
+# Local markdown (.md) rendering
+```
+# Install grip
+pip install grip
+
+# First download the styles, you may need to set REQUESTS_CA_BUNDLE to point to your HTTP proxy's cert's CA
+echo "Hello **world**!" | REQUESTS_CA_BUNDLE=../bpaas-local-dev/BloombergLPCORPCLASS1ROOTG2.crt grip --export -
+
+# Update settings to print debug info
+echo >~/.grip/settings.py<<EOM
+# GitHub Enterprise API does not support markdown API
+DEBUG=True
+DEBUG_GRIP=True
+EOM
+
+# Run grip server and watch the md file, URL to access rendered page is http://localhost:6419/
+REQUESTS_CA_BUNDLE=../bpaas-local-dev/BloombergLPCORPCLASS1ROOTG2.crt grip docs/k8s_migration_plan.md
+```
