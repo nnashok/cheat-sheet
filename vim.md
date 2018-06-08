@@ -12,7 +12,7 @@
 # Plugins
 # fuzzy finder: cmdt, ctrlp
 # surroundvim: for working with parens, quotes etc, operates on surrounding objects
-`ds'` or `dsp`, `asi'`
+`ds'` or `dsp`, `asi'`, `ysiw<em>`
 
 
 # Tips
