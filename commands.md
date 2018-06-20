@@ -50,3 +50,12 @@ EOM
 # Run grip server and watch the md file, URL to access rendered page is http://localhost:6419/
 REQUESTS_CA_BUNDLE=../bpaas-local-dev/BloombergLPCORPCLASS1ROOTG2.crt grip docs/k8s_migration_plan.md
 ```
+
+
+## OpenSSL, Certificates and Keys
+1. Verify a certificate and key matches
+
+```
+openssl x509 -noout -modulus -in server.crt| openssl md5
+openssl rsa -noout -modulus -in server.key| openssl md5
+```
