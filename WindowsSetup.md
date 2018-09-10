@@ -52,3 +52,7 @@ Once this is setup, we dont need git-bash or Cygwin or other tools for developme
 
 # Bluetooth
 https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings-winpc/win-10-pc-cant-complete-bluetooth-file-transfer/291119aa-5e87-4fe2-9da1-6a5b4a49eb68
+
+# Wifi
+Show password for a wifi profile:
+`netsh wlan show profile name="nannana1" key=clear`
