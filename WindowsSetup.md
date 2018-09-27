@@ -49,6 +49,8 @@ Once this is setup, we dont need git-bash or Cygwin or other tools for developme
    
 # Windows Tricks
 * Open a file using the default application from a Windows shell: `start readme.txt`. If you need to start from within another program, you need to invoke it via the `cmd` like `cmd /c "start readme.txt"`.
+* To Take a Screenshot of Part of Your Screen: Press “Windows + Shift + S”. Your screen will appear grayed out and your mouse cursor will change. Click and drag on your screen to select the part of your screen you want to capture. A screenshot of the screen region you selected will be copied to your clipboard. You can paste it in any application by selecting Edit > Paste or pressing Ctrl + V, just as you’d paste a full-screen shortcut taken with the Print Screen key.
+* Open task manager: Control + F3
 
 # Bluetooth
 https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings-winpc/win-10-pc-cant-complete-bluetooth-file-transfer/291119aa-5e87-4fe2-9da1-6a5b4a49eb68
