@@ -59,3 +59,10 @@ REQUESTS_CA_BUNDLE=../bpaas-local-dev/BloombergLPCORPCLASS1ROOTG2.crt grip docs/
 openssl x509 -noout -modulus -in server.crt| openssl md5
 openssl rsa -noout -modulus -in server.key| openssl md5
 ```
+
+## Get Chromium Version from Inspector/Console
+```
+var uaStr = navigator.userAgent.toLowerCase();
+var index = uaStr.indexOf('chrome/');
+uaStr.substring(index +7,index+11);
+```
