@@ -5,7 +5,9 @@
 * Code formatting: https://github.com/google/closure-library/wiki/Formatting-.js-with-clang-format
 
 ## Python
-* Code formatting: https://github.com/google/yapf
+* Code formatting:
+1. https://github.com/google/yapf
+1. https://pypi.org/project/autopep8/
 
 ## Software Development
 * Rewriting software completely: https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
