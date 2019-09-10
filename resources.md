@@ -2,12 +2,16 @@
 
 ## Javascript
 * Promises: https://developers.google.com/web/fundamentals/primers/promises
-* Code formatting: https://github.com/google/closure-library/wiki/Formatting-.js-with-clang-format
+* Code formatting:
+  1. https://github.com/google/closure-library/wiki/Formatting-.js-with-clang-format
+  1. http://clang.llvm.org/docs/ClangFormat.html
 
 ## Python
 * Code formatting:
-1. https://github.com/google/yapf
-1. https://pypi.org/project/autopep8/
+  1. Guidelines: https://www.python.org/dev/peps/pep-0008/
+  1. Tools:
+     1. https://github.com/google/yapf
+     1. https://pypi.org/project/autopep8/
 
 ## Software Development
 * Rewriting software completely: https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
