@@ -12,6 +12,9 @@
   1. Tools:
      1. https://github.com/google/yapf
      1. https://pypi.org/project/autopep8/
+     
+## Github Markdown
+Syntax: https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 
 ## Software Development
 * Rewriting software completely: https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
