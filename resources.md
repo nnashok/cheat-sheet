@@ -23,3 +23,6 @@ Syntax: https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 
 ## AWS
 * AWS Reference Architectures: https://aws.amazon.com/architecture/?awsf.quickstart-architecture-page-filter=highlight%23new
+
+## Machine Learning
+* Text generator: https://talktotransformer.com/
