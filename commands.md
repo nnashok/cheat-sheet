@@ -66,3 +66,13 @@ var uaStr = navigator.userAgent.toLowerCase();
 var index = uaStr.indexOf('chrome/');
 uaStr.substring(index +7,index+11);
 ```
+
+## Saving a stream to a file
+Saving the video stream 1 from the URL which serves multiple video streams:
+```
+mplayer\mencoder.exe -vid 1 "https://cdn.jwplayer.com/manifests/Xs1Ix2Fn.m3u8?sig=f037b0ca226f48939edd1579e97ead77&exp=1575836684" -oac pcm -ovc copy -o inner_7.mp4
+```
+Playing a specific stream from a URL:
+```
+mplayer\mplayer.exe -vid 1 "https://cdn.jwplayer.com/manifests/MARlcFVG.m3u8?sig=827e53a201cdd5336d7076938ec56dfd&exp=1575764700"
+```
