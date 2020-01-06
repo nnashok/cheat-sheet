@@ -19,6 +19,35 @@ https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-fla
    export DOCKER_HOST=tcp://0.0.0.0:2375
    docker run hello-world
    ```
+
+# Installing Hyper-V packages on Windows Home
+From https://forums.docker.com/t/installing-docker-on-windows-10-home/11722/25
+```
+pushd "%~dp0"
+dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum >hyper-v.txt
+for /f %%i in ('findstr /i . hyper-v.txt 2^>nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"
+del hyper-v.txt
+Dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL
+pause
+```
+
+If you need to install the container features:
+```
+pushd "%~dp0"
+dir /b %SystemRoot%\servicing\Packages\*containers*.mum >containers.txt
+for /f %%i in ('findstr /i . containers.txt 2^>nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"
+del containers.txt
+Dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL
+pause
+```
+
+You may need to edit registry:
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion :
+EditionID: Core --> Professional
+ProductName: Windows 10 Home --> Windows 10 Pro
+```
+
 Building a Docker image in Ubuntu:
 
 # Accessing files within Ubuntu from Windows
