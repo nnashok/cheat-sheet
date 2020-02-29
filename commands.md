@@ -29,7 +29,8 @@ git checkout c5f567 -- file1/to/restore file2/to/restore
 `ffmpeg-20200106-1e3f4b5-win64-static\bin\ffmpeg.exe -loglevel error -i "Bhagavad Gita Sanskrit Guided Chant with Meaning - Chapter  -18 - Moksha Sannyasa Yoga.mp4" "Bhagavad Gita Sanskrit Guided Chant with Meaning - Chapter  -18 - Moksha Sannyasa Yoga.mp3"`
 
 # Download stream to file using mencoder
-```@echo Started: %date% %time% > time.txt
+```
+@echo Started: %date% %time% > time.txt
 "C:\Program Files\mplayer\mencoder.exe" -vid 1 "https://cdn.jwplayer.com/manifests/134aeq8w.m3u8?sig=fd3c8e9d0395" -oac pcm -ovc copy -o example.mp4
 @echo Ended: %date% %time% >> time.txt
 ```
