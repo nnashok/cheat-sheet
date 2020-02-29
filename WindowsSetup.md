@@ -67,6 +67,24 @@ Once this is setup, we dont need git-bash or Cygwin or other tools for developme
 * tig dos2unix apt-file
 
 # Tools on Windows
+* Process Explorer
+* node
+* inkscape
+* winrar
+vlc
+sketchbook
+krita
+gvim
+kind
+install_hyperv
+docker
+android studio
+ffmpeg
+steam
+putty
+mplayer
+keepass
+
 * MobaXTerm
 * Firefox
 * Google Chrome
