@@ -92,6 +92,8 @@ keepass
 * WhatsApp
 * NetSpot (for WiFi signal analysis) (NetStumbler didnt support the specific Intel wifi chip)
 * ConEmu
+* Chocolatey
+
    Configure ConEmu to use Ubuntu bash: goto the settings -> Startup -> Specific task name screen and pick {Bash::bash} from the drop down list and save the settings.
    
 # Windows Tricks
