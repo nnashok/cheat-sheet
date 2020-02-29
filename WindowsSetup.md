@@ -84,7 +84,7 @@ steam
 putty
 mplayer
 keepass
-
+7z
 * MobaXTerm
 * Firefox
 * Google Chrome
