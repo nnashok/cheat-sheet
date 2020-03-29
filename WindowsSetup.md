@@ -42,29 +42,7 @@ nodejs git python3 vscode
 * Duck Duck Go
 * YouTube Downloader (https://addons.mozilla.org/en-US/firefox/addon/youtube_downloader_webx)
 
-# WSL, Docker and Ubuntu on Windows
-https://nickjanetakis.com/blog/using-wsl-and-mobaxterm-to-create-a-linux-dev-environment-on-windows
-https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
-##TL;DR
-* Enable WSL
-* Download and install Docker for Windows. Make sure you run it as Administrator other wise you'll see errors like `Docker hv-sock proxy (vsudd) is not reachable`.
-* On host (Windows): Enable Docker to be accessible over tcp WITHOUT TLS (in settings)
-* In Ubuntu:
-** Install docker-ce, *docker.io* does NOT work using the Docker For Windows as the daemon
-   ```
-   sudo apt-get remove docker docker-engine docker.io
-   sudo apt-get update
-   sudo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
-   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-   sudo apt-key fingerprint 0EBFCD88
-   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-   sudo apt-get update
-   sudo apt-get install docker-ce
-   export DOCKER_HOST=tcp://0.0.0.0:2375
-   docker run hello-world
-   ```
-
-# Installing Hyper-V packages on Windows Home
+# Installing Hyper-V packages on Windows Home to use Docker
 From https://forums.docker.com/t/installing-docker-on-windows-10-home/11722/25
 ```
 pushd "%~dp0"
@@ -91,6 +69,30 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion :
 EditionID: Core --> Professional
 ProductName: Windows 10 Home --> Windows 10 Pro
 ```
+
+# WSL, Docker and Ubuntu on Windows
+https://nickjanetakis.com/blog/using-wsl-and-mobaxterm-to-create-a-linux-dev-environment-on-windows
+https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
+##TL;DR
+* Check if virtualization is enabled (`system information`: look for Hyer-V* featurs)
+* Enable WSL (`Turn Windows Features On or Off`)
+* Download and install Docker for Windows. Make sure you run it as Administrator other wise you'll see errors like `Docker hv-sock proxy (vsudd) is not reachable`.
+* On host (Windows): Enable Docker to be accessible over tcp WITHOUT TLS (in settings)
+* In Ubuntu:
+** Install docker-ce, *docker.io* does NOT work using the Docker For Windows as the daemon
+   ```
+   sudo apt-get remove docker docker-engine docker.io
+   sudo apt-get update
+   sudo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   sudo apt-key fingerprint 0EBFCD88
+   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   sudo apt-get update
+   sudo apt-get install docker-ce
+   export DOCKER_HOST=tcp://0.0.0.0:2375
+   docker run hello-world
+   ```
+
 
 Building a Docker image in Ubuntu:
 
