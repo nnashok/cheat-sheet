@@ -1,3 +1,47 @@
+# Tools on Windows
+* Firefox
+* Google Chrome
+* WhatsApp
+* Chocolatey
+
+* Process Explorer
+* Malawarebytes
+* ccleaner
+* winrar
+* vlc
+* putty
+* keepass
+* ffmpeg
+
+* gvim
+* mplayer
+* steam
+* inkscape
+* sketchbook
+* krita
+* 7z
+* NetSpot (for WiFi signal analysis) (NetStumbler didnt support the specific Intel wifi chip)
+
+* android studio
+
+* install_hyperv
+* docker
+* Ubuntu
+* MobaXTerm
+* ConEmu
+* kind
+
+```
+choco install procexp malwarebytes ccleaner winrar vlc putty keepass notepadplusplus ffmpeg-batch.install
+nodejs git python3 vscode
+```
+
+   Configure ConEmu to use Ubuntu bash: goto the settings -> Startup -> Specific task name screen and pick {Bash::bash} from the drop down list and save the settings.
+
+# Firefox Extensions
+* Duck Duck Go
+* YouTube Downloader (https://addons.mozilla.org/en-US/firefox/addon/youtube_downloader_webx)
+
 # WSL, Docker and Ubuntu on Windows
 https://nickjanetakis.com/blog/using-wsl-and-mobaxterm-to-create-a-linux-dev-environment-on-windows
 https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
@@ -66,45 +110,6 @@ Once this is setup, we dont need git-bash or Cygwin or other tools for developme
 # Tools in Ubuntu on Windows
 * tig dos2unix apt-file
 
-# Tools on Windows
-* Firefox
-* Google Chrome
-* WhatsApp
-* Chocolatey
-
-* Process Explorer
-* Malawarebytes
-* ccleaner
-* winrar
-* vlc
-* putty
-* keepass
-* ffmpeg
-
-* gvim
-* mplayer
-* steam
-* inkscape
-* sketchbook
-* krita
-* 7z
-* NetSpot (for WiFi signal analysis) (NetStumbler didnt support the specific Intel wifi chip)
-
-* android studio
-
-* kind
-* install_hyperv
-* docker
-* Ubuntu
-* MobaXTerm
-* ConEmu
-
-```
-choco install procexp malwarebytes ccleaner winrar vlc putty keepass notepadplusplus ffmpeg-batch.install
-nodejs git python3 vscode
-```
-
-   Configure ConEmu to use Ubuntu bash: goto the settings -> Startup -> Specific task name screen and pick {Bash::bash} from the drop down list and save the settings.
    
 # Windows Tricks
 * Open a file using the default application from a Windows shell: `start readme.txt`. If you need to start from within another program, you need to invoke it via the `cmd` like `cmd /c "start readme.txt"`.
