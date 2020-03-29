@@ -67,32 +67,42 @@ Once this is setup, we dont need git-bash or Cygwin or other tools for developme
 * tig dos2unix apt-file
 
 # Tools on Windows
-* Process Explorer
-* node
-* inkscape
-* winrar
-vlc
-sketchbook
-krita
-gvim
-kind
-install_hyperv
-docker
-android studio
-ffmpeg
-steam
-putty
-mplayer
-keepass
-7z
-* MobaXTerm
 * Firefox
 * Google Chrome
-* Ubuntu
 * WhatsApp
-* NetSpot (for WiFi signal analysis) (NetStumbler didnt support the specific Intel wifi chip)
-* ConEmu
 * Chocolatey
+
+* Process Explorer
+* Malawarebytes
+* ccleaner
+* winrar
+* vlc
+* putty
+* keepass
+* ffmpeg
+
+* gvim
+* mplayer
+* steam
+* inkscape
+* sketchbook
+* krita
+* 7z
+* NetSpot (for WiFi signal analysis) (NetStumbler didnt support the specific Intel wifi chip)
+
+* android studio
+
+* kind
+* install_hyperv
+* docker
+* Ubuntu
+* MobaXTerm
+* ConEmu
+
+```
+choco install procexp malwarebytes ccleaner winrar vlc putty keepass notepadplusplus ffmpeg-batch.install
+nodejs git python3 vscode
+```
 
    Configure ConEmu to use Ubuntu bash: goto the settings -> Startup -> Specific task name screen and pick {Bash::bash} from the drop down list and save the settings.
    
