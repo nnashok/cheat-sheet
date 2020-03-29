@@ -44,6 +44,7 @@ nodejs git python3 vscode
 
 # Installing Hyper-V packages on Windows Home to use Docker
 From https://forums.docker.com/t/installing-docker-on-windows-10-home/11722/25
+Execute the following in a Admin `cmd` window:
 ```
 pushd "%~dp0"
 dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum >hyper-v.txt
