@@ -42,7 +42,7 @@ nodejs git python3 vscode
 * Duck Duck Go
 * YouTube Downloader (https://addons.mozilla.org/en-US/firefox/addon/youtube_downloader_webx)
 
-# Installing Hyper-V packages on Windows Home to use Docker
+# Installing Hyper-V ad Containers packages on Windows Home to use Docker
 From https://forums.docker.com/t/installing-docker-on-windows-10-home/11722/25
 Execute the following in a Admin `cmd` window:
 ```
@@ -50,26 +50,22 @@ pushd "%~dp0"
 dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum >hyper-v.txt
 for /f %%i in ('findstr /i . hyper-v.txt 2^>nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"
 del hyper-v.txt
-Dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL
-pause
-```
-
-If you need to install the container features:
-```
-pushd "%~dp0"
 dir /b %SystemRoot%\servicing\Packages\*containers*.mum >containers.txt
 for /f %%i in ('findstr /i . containers.txt 2^>nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"
 del containers.txt
+Dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL
 Dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL
 pause
 ```
 
-You may need to edit registry:
+You need to edit registry:
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion :
 EditionID: Core --> Professional
 ProductName: Windows 10 Home --> Windows 10 Pro
 ```
+
+Latest version on the edge Docker channel supports Windows 10 Home but needs an Windows Insider version for now
 
 # WSL, Docker and Ubuntu on Windows
 https://nickjanetakis.com/blog/using-wsl-and-mobaxterm-to-create-a-linux-dev-environment-on-windows
