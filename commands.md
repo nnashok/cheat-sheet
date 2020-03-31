@@ -8,6 +8,11 @@ rsync -e ssh --info=progress2 --no-i-r -avz $PWD/ nnashok@192.168.1.133:"/Mac/Do
 apt-cache show packagename
 ```
 
+# Check for source of a package
+```
+apt-cache madison docker-ce
+```
+
 # Search for packages matching a name
 ```
 apt-cache search packagename
