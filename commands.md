@@ -13,6 +13,21 @@ apt-cache show packagename
 apt-cache search packagename
 ```
 
+# Update packages metadata
+```
+apt-get update
+```
+
+# Update a specific package
+```
+apt-get --only-upgrade install docker-ce
+```
+
+# List installed packages
+```
+apt-get list --installed
+```
+
 # Resetting specific files to a specific commit version
 git checkout c5f567 -- file1/to/restore file2/to/restore
 
