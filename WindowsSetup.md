@@ -32,7 +32,7 @@
 * kind or minikube
 
 ```
-choco install procexp malwarebytes ccleaner winrar vlc putty keepass notepadplusplus ffmpeg-batch.install
+choco install procexp malwarebytes ccleaner winrar vlc putty keepass notepadplusplus ffmpeg-batch.install minikube
 
 nodejs git python3 vscode
 ```
@@ -98,7 +98,7 @@ Two options using `kind` or `minikube`
 ## kind
 This allows you to run Kubernetes in a Docker container. `Docker for Windows` will show a new container `kind-control-plane` which is running the Kubernetes cluster. Except for being able to pull images from private registies, everything else seems to work.
 ## Minikube
-You also can use `minikube` to create a Kubernetes cluster without creating another VM. Instead, you can configure `minikube` to create the cluster in a container in `Docker for Windows`.
+You also can use `minikube` to create a Kubernetes cluster without creating another VM. Instead, you can configure `minikube` to create the cluster in a container in `Docker for Windows`. Additionally, `minikube` does work with any registries that are reachable via the `Docker for Windows`, e.g private registries reachable over VPN.
 ```
 minikube start --driver=docker
 ```
