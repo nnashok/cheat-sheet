@@ -105,6 +105,12 @@ Note that the above needs to be run in Windows. Trying that in an Ubuntu shell d
 ```
 minikube kubectl -- get pods --all-namespaces
 ```
+### Accessing from Ubuntu in WSL
+```
+ln -s /mnt/c/Users/ashoknn/.minikube
+cp /mnt/c/Users/ashoknn/.kube/config ~/.kube/
+sed -i -e 's#C:\\Users\\ashoknn\\#/home/ashoknn/#' -e 's#\\#\/#g' config
+```
 
 # Accessing files within Ubuntu from Windows
 ```C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\```
