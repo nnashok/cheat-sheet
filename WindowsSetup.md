@@ -29,10 +29,11 @@
 * Ubuntu
 * MobaXTerm
 * ConEmu
-* kind
+* kind or minikube
 
 ```
 choco install procexp malwarebytes ccleaner winrar vlc putty keepass notepadplusplus ffmpeg-batch.install
+
 nodejs git python3 vscode
 ```
 
