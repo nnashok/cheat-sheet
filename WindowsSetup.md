@@ -107,9 +107,9 @@ minikube kubectl -- get pods --all-namespaces
 ```
 ### Accessing from Ubuntu in WSL
 ```
-ln -s /mnt/c/Users/ashoknn/.minikube
+cd ~ && ln -s /mnt/c/Users/ashoknn/.minikube
 cp /mnt/c/Users/ashoknn/.kube/config ~/.kube/
-sed -i -e 's#C:\\Users\\ashoknn\\#/home/ashoknn/#' -e 's#\\#\/#g' config
+sed -i -e 's#C:\\Users\\ashoknn\\#/home/ashoknn/#' -e 's#\\#\/#g' ~/.kube/config
 ```
 
 # Accessing files within Ubuntu from Windows
