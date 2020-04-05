@@ -90,8 +90,21 @@ https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-fla
    docker run hello-world
    ```
 
-
 Building a Docker image in Ubuntu:
+
+# Kubernetes in Windows
+Two options using `kind` or `minikube`
+## kind
+This allows you to run Kubernetes in a Docker container. `Docker for Windows` will show a new container `kind-control-plane` which is running the Kubernetes cluster. Except for being able to pull images from private registies, everything else seems to work.
+## Minikube
+You also can use `minikube` to create a Kubernetes cluster without creating another VM. Instead, you can configure `minikube` to create the cluster in a container in `Docker for Windows`.
+```
+minikube start --driver=docker
+```
+Note that the above needs to be run in Windows. Trying that in an Ubuntu shell does not work as `minikube` expects to reach the Docker daemon over Unix socket, it does not use `DOCKER_HOST` to reach the Docker daemon. To verify installation:
+```
+minikube kubectl -- get pods --all-namespaces
+```
 
 # Accessing files within Ubuntu from Windows
 ```C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\```
