@@ -20,6 +20,7 @@ Syntax: https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 ## Software Development
 * Rewriting software completely: https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 * The 12 Factor App: https://12factor.net
+* Python Quality Engineering: https://speakerdeck.com/sfermigier/python-quality-engineering-a-tour-of-best-practices
 
 ## AWS
 * AWS Reference Architectures: https://aws.amazon.com/architecture/?awsf.quickstart-architecture-page-filter=highlight%23new
