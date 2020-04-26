@@ -24,6 +24,11 @@ Syntax: https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 
 ## AWS
 * AWS Reference Architectures: https://aws.amazon.com/architecture/?awsf.quickstart-architecture-page-filter=highlight%23new
+* AWS CloudFormation (from https://dannys.space/level-up-cloudformation-with-vs-code):
+** Converting templates: https://github.com/awslabs/aws-cfn-template-flip
+** Linting: https://github.com/aws-cloudformation/cfn-python-lint , https://marketplace.visualstudio.com/items?itemName=kddejong.vscode-cfn-lint
+** Autocompletion: https://marketplace.visualstudio.com/items?itemName=dsteenman.cloudformation-yaml-snippets
+** API Documentation Browser: https://kapeli.com/dash , https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash
 
 ## Machine Learning
 * Text generator: https://talktotransformer.com/
