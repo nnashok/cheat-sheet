@@ -33,8 +33,15 @@ apt-get --only-upgrade install docker-ce
 apt-get list --installed
 ```
 
-# Resetting specific files to a specific commit version
+# Git
+## Resetting specific files to a specific commit version
 git checkout c5f567 -- file1/to/restore file2/to/restore
+
+## Search through git stash
+`for i in $(git stash list | cut -f1 -d':'); do echo "$i"; git stash show -p "$i" | grep weekDay; done`
+
+## Search local branches
+`for i in $(git branch | sed -e 's/..//'); do echo $i; git show $i:client/scheduleritemeditor.js | grep weekDay; done`
 
 # Docker
 * Delete dangling images
