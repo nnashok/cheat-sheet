@@ -14,6 +14,11 @@
      1. https://pypi.org/project/autopep8/
   1. The Hitchhiker's Guide to Python: https://docs.python-guide.org/writing/style/
      
+     
+## Go
+* Tutorials:
+  1. https://github.com/inancgumus/learngo/
+
 ## Github Markdown
 Syntax: https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 
