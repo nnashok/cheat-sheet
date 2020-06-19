@@ -1,4 +1,7 @@
 
+## Docker
+* Hadolint (Docker linter): https://github.com/hadolint/hadolint
+* FROM:latest (create better and more portable Docker images): https://www.fromlatest.io/
 
 ## Javascript
 * Promises: https://developers.google.com/web/fundamentals/primers/promises
