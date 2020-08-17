@@ -112,6 +112,19 @@ cd ~ && ln -s /mnt/c/Users/ashoknn/.minikube
 cp /mnt/c/Users/ashoknn/.kube/config ~/.kube/
 sed -i -e 's#C:\\Users\\ashoknn\\#/home/ashoknn/#' -e 's#\\#\/#g' ~/.kube/config
 ```
+## Accessing Moby VM
+[https://forums.docker.com/t/how-can-i-ssh-into-the-betas-mobylinuxvm/10991/14](Using nsenter to access Moby VM), extract:
+```
+FROM alpine
+MAINTAINER You <you@example.com>
+RUN apk update && \
+    apk add util-linux && \
+    rm -rf /var/cache/apk/*
+ENTRYPOINT ["nsenter", "--target", "1", "--mount", "--uts", "--ipc", "--net", "--pid"]
+```
+```
+docker run -it --privileged --pid=host hostenter
+```
 
 # Accessing files within Ubuntu from Windows
 ```C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\```
