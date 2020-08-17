@@ -113,7 +113,7 @@ cp /mnt/c/Users/ashoknn/.kube/config ~/.kube/
 sed -i -e 's#C:\\Users\\ashoknn\\#/home/ashoknn/#' -e 's#\\#\/#g' ~/.kube/config
 ```
 ## Accessing Moby VM
-[https://forums.docker.com/t/how-can-i-ssh-into-the-betas-mobylinuxvm/10991/14](Using nsenter to access Moby VM), extract:
+[Using nsenter to access Moby VM](https://forums.docker.com/t/how-can-i-ssh-into-the-betas-mobylinuxvm/10991/14), extract:
 ```
 FROM alpine
 MAINTAINER You <you@example.com>
