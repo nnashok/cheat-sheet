@@ -154,3 +154,6 @@ https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings-winp
 # Wifi
 Show password for a wifi profile:
 `netsh wlan show profile name="nannana1" key=clear`
+
+# Firefox Lost Session Recovery
+BACKUP your profiles directory: `%appdata%\Roaming\Mozilla\Firefox\Profiles\<profilename>`. Copy the most recent file from `sessionstore-backups` to profile directory as `sessionstore.jsonlz4`. Restart Firefox and you should now see the previous session.
