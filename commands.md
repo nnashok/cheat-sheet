@@ -117,3 +117,24 @@ Playing a specific stream from a URL:
 ```
 mplayer\mplayer.exe -vid 1 "https://cdn.jwplayer.com/manifests/MARlcFVG.m3u8?sig=827e53a201cdd5336d7076938ec56dfd&exp=1575764700"
 ```
+
+## Restore Notepad++ session from backup directory contents
+```
+cd <user>/AppData/Roaming/Notepad++
+vim -u NONE -S notepad++_restore.vim
+```
+notepad++\_restore.vim contents:
+```vim
+r !ls backup
+/\(.*\)@\(.*\)
+%s//            <File firstVisibleLine="0" xOffset="0" scrollWidth="180" startPos="9" endPos="9" selMode="0" offset="0" wrapCount="1" lang="Normal Text" encoding="-1" userReadOnly="no" filename="\1" backupFilePath="C:\\Users\\NalkundAshok\\AppData\\Roaming\\Notepad\+\+\\backup\\\1@\2" originalFileLastModifTimestamp="0" originalFileLastModifTimestampHigh="0" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" \/>
+1
+1,$y
+enew!
+r !grep -v "File" session.xml
+1
+/mainView
+put
+w session_new.xml
+q
+```
